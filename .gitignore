@@ -1,0 +1,21 @@
+﻿# OpenMausBot internal files
+.agents/
+.claude/
+.grok/
+.gemini/
+fiverr-naming-gig-audit-final.md
+
+# Gradle / Android build files
+.gradle/
+build/
+app/android/build/
+app/android/app/build/
+*.iml
+.idea/
+local.properties
+*.apk
+*.aab
+
+# OS generated files
+Thumbs.db
+.DS_Store

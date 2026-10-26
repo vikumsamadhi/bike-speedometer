@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0B0F19"
+    android:gravity="center_horizontal"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🚲 BIKE SPEEDO"
+        android:textColor="#38BDF8"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/tvBleStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BLE: Disconnected"
+        android:textColor="#94A3B8"
+        android:textSize="14sp"
+        android:layout_marginTop="8dp" />
+
+    <!-- Big Speed Meter Display -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="#111827"
+        android:layout_marginTop="40dp"
+        android:padding="32dp">
+
+        <TextView
+            android:id="@+id/tvSpeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.0"
+            android:textColor="#00FFCC"
+            android:textSize="72sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="km/h"
+            android:textColor="#94A3B8"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvGpsStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GPS: Waiting Fix"
+            android:textColor="#38BDF8"
+            android:textSize="14sp"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Action Buttons -->
+    <Button
+        android:id="@+id/btnConnectBle"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Connect ESP32 (BLE)"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:backgroundTint="#0284C7"
+        android:layout_marginBottom="12dp" />
+
+    <Button
+        android:id="@+id/btnToggleGps"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Start GPS Tracking"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:backgroundTint="#334155"
+        android:layout_marginBottom="24dp" />
+
+</LinearLayout>
